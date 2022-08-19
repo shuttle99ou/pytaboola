@@ -66,7 +66,7 @@ class CampaignSummaryReport(ReportService):
             'campaign_site_day_breakdown',
     )
 
-    allowed_filters = ('campaign', 'platform', 'country', 'site')
+    allowed_filters = ('campaign', 'platform', 'country', 'site', 'include_multi_conversions')
 
 
 class TopCampaignContentReport(ReportService):
@@ -74,7 +74,7 @@ class TopCampaignContentReport(ReportService):
 
     allowed_dimensions = ('item_breakdown', )
 
-    allowed_filters = ('campaign', )
+    allowed_filters = ('campaign', 'include_multi_conversions')
 
 
 class RevenueSummaryReport(ReportService):
